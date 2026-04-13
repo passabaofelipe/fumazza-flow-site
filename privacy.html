@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Fumazza Flow</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f10; color: #e0e0e0; line-height: 1.6; }
+    a { color: #6c63ff; }
+    header { background: #1a1a1f; border-bottom: 1px solid #2a2a35; padding: 18px 0; }
+    .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    .logo { font-size: 20px; font-weight: 700; color: #fff; }
+    .logo span { color: #6c63ff; }
+    .content { padding: 60px 0; }
+    h1 { font-size: 28px; font-weight: 800; color: #fff; margin-bottom: 6px; }
+    .updated { font-size: 12px; color: #555; margin-bottom: 36px; }
+    h2 { font-size: 16px; font-weight: 600; color: #ccc; margin: 28px 0 8px; }
+    p, li { font-size: 14px; color: #777; line-height: 1.7; }
+    ul { padding-left: 20px; margin-top: 6px; }
+    li { margin-bottom: 4px; }
+    footer { border-top: 1px solid #2a2a35; padding: 20px 0; text-align: center; }
+    footer p { font-size: 13px; color: #555; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" style="text-decoration:none">
+        <div class="logo">Fumazza<span>Flow</span></div>
+      </a>
+    </div>
+  </header>
+  <main>
+    <div class="container content">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: April 2026</p>
+
+      <h2>1. Overview</h2>
+      <p>Fumazza Flow ("the App") is a local desktop application. It does not operate any cloud servers or databases on behalf of users. All processing occurs on the user's own machine.</p>
+
+      <h2>2. Data We Collect</h2>
+      <p>The App does not collect, transmit, or store any personal data on external servers. The following data is stored locally on the user's device only:</p>
+      <ul>
+        <li>TikTok OAuth access tokens and refresh tokens (stored in local files)</li>
+        <li>Channel and video metadata entered by the user</li>
+        <li>Publish job history (stored in a local MongoDB instance)</li>
+      </ul>
+
+      <h2>3. TikTok Data Usage</h2>
+      <p>When a user authenticates with TikTok, the App receives and locally stores:</p>
+      <ul>
+        <li><strong style="color:#ccc">open_id</strong> — used to identify the TikTok account</li>
+        <li><strong style="color:#ccc">display_name</strong> — shown in the channel configuration UI</li>
+        <li><strong style="color:#ccc">access_token / refresh_token</strong> — used to authenticate API calls for uploading and publishing videos</li>
+      </ul>
+      <p>This data is never sent to any third party or external server controlled by Fumazza Flow.</p>
+
+      <h2>4. How We Use TikTok API</h2>
+      <p>The App uses the TikTok Content Posting API exclusively to upload and publish videos that the user explicitly selects. No content is posted without the user's direct action (manual publish or pre-configured schedule set by the user).</p>
+
+      <h2>5. Data Retention</h2>
+      <p>All data is stored on the user's local machine. Users can delete their credentials and data at any time by removing the local credential files or uninstalling the App.</p>
+
+      <h2>6. Third-Party Services</h2>
+      <p>The App communicates directly with the following official APIs only:</p>
+      <ul>
+        <li>TikTok API (api.tiktok.com)</li>
+        <li>YouTube Data API v3 (googleapis.com)</li>
+      </ul>
+
+      <h2>7. Contact</h2>
+      <p>For questions about this privacy policy, contact us at: <a href="mailto:fumazzaflow@gmail.com">fumazzaflow@gmail.com</a></p>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>© 2026 Fumazza Flow</p>
+    </div>
+  </footer>
+</body>
+</html>
