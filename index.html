@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fumazza Flow</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f10; color: #e0e0e0; line-height: 1.6; }
+    a { color: #6c63ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header { background: #1a1a1f; border-bottom: 1px solid #2a2a35; padding: 18px 0; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+    .nav { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 20px; font-weight: 700; color: #fff; letter-spacing: -0.5px; }
+    .logo span { color: #6c63ff; }
+    .nav-links { display: flex; gap: 24px; font-size: 14px; color: #888; }
+    .nav-links a { color: #888; }
+    .nav-links a:hover { color: #fff; text-decoration: none; }
+
+    .hero { padding: 80px 0 60px; text-align: center; }
+    .hero h1 { font-size: 42px; font-weight: 800; color: #fff; letter-spacing: -1px; margin-bottom: 18px; }
+    .hero h1 span { color: #6c63ff; }
+    .hero p { font-size: 18px; color: #888; max-width: 560px; margin: 0 auto 32px; }
+    .badge { display: inline-block; background: rgba(108,99,255,0.12); border: 1px solid rgba(108,99,255,0.3); color: #6c63ff; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 100px; margin-bottom: 20px; letter-spacing: 0.05em; text-transform: uppercase; }
+
+    .features { padding: 60px 0; }
+    .features h2 { font-size: 24px; font-weight: 700; color: #fff; margin-bottom: 32px; text-align: center; }
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .feature-card { background: #1a1a1f; border: 1px solid #2a2a35; border-radius: 12px; padding: 24px; }
+    .feature-icon { font-size: 28px; margin-bottom: 12px; }
+    .feature-card h3 { font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 8px; }
+    .feature-card p { font-size: 13px; color: #777; line-height: 1.5; }
+
+    .tiktok-section { background: #1a1a1f; border: 1px solid #2a2a35; border-radius: 12px; padding: 32px; margin: 40px 0; }
+    .tiktok-section h2 { font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 16px; }
+    .tiktok-section p { font-size: 14px; color: #888; margin-bottom: 12px; }
+    .scope-item { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 14px; }
+    .scope-tag { background: rgba(108,99,255,0.12); border: 1px solid rgba(108,99,255,0.3); color: #6c63ff; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 6px; white-space: nowrap; font-family: monospace; flex-shrink: 0; margin-top: 2px; }
+    .scope-desc { font-size: 13px; color: #888; }
+    .scope-desc strong { color: #ccc; }
+
+    .privacy { padding: 60px 0; }
+    .privacy h2 { font-size: 24px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .privacy .updated { font-size: 12px; color: #555; margin-bottom: 32px; }
+    .privacy h3 { font-size: 15px; font-weight: 600; color: #ccc; margin: 24px 0 8px; }
+    .privacy p, .privacy li { font-size: 14px; color: #777; line-height: 1.7; }
+    .privacy ul { padding-left: 20px; }
+    .privacy li { margin-bottom: 4px; }
+    .divider { border: none; border-top: 1px solid #2a2a35; margin: 60px 0; }
+
+    footer { background: #1a1a1f; border-top: 1px solid #2a2a35; padding: 24px 0; text-align: center; }
+    footer p { font-size: 13px; color: #555; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">Fumazza<span>Flow</span></div>
+        <div class="nav-links">
+          <a href="#how-it-works">How it works</a>
+          <a href="#tiktok">TikTok Integration</a>
+          <a href="#privacy">Privacy Policy</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section class="hero">
+        <div class="badge">Content Automation Tool</div>
+        <h1>Automate your<br /><span>video publishing</span></h1>
+        <p>Fumazza Flow is a local desktop tool for content creators to schedule and publish videos automatically to YouTube, TikTok, and Kwai.</p>
+      </section>
+
+      <section class="features" id="how-it-works">
+        <h2>What Fumazza Flow does</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📁</div>
+            <h3>Video Library</h3>
+            <p>Import your local video files and organize them by channel and niche for streamlined publishing.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📅</div>
+            <h3>Weekly Scheduling</h3>
+            <p>Set up a full week of content in minutes. Define days, time slots, and let the tool handle the rest.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🚀</div>
+            <h3>Multi-Platform Publishing</h3>
+            <p>Publish to YouTube, TikTok, and Kwai from a single interface. Manage multiple channels per platform.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Local & Private</h3>
+            <p>Fumazza Flow runs entirely on your machine. No cloud servers. Your credentials and videos stay local.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tiktok-section" id="tiktok">
+        <h2>TikTok Integration</h2>
+        <p>
+          Fumazza Flow integrates with TikTok using the official <strong>Login Kit</strong> and <strong>Content Posting API</strong>.
+          Authentication is handled via OAuth 2.0 — users log in through TikTok's official authorization page.
+          No passwords are stored. Access tokens are saved locally on the user's machine only.
+        </p>
+        <p style="margin-bottom:20px">The following scopes are requested and used as described:</p>
+
+        <div class="scope-item">
+          <span class="scope-tag">user.info.basic</span>
+          <div class="scope-desc">
+            <strong>Used to identify the authenticated TikTok account.</strong><br />
+            After login, the app reads the user's display name and open_id to associate the account with the correct channel configuration.
+          </div>
+        </div>
+        <div class="scope-item">
+          <span class="scope-tag">video.upload</span>
+          <div class="scope-desc">
+            <strong>Used to upload video files to TikTok.</strong><br />
+            The user selects a local video file. Fumazza Flow uploads it to the TikTok API on behalf of the authenticated account using the Direct Post method.
+          </div>
+        </div>
+        <div class="scope-item">
+          <span class="scope-tag">video.publish</span>
+          <div class="scope-desc">
+            <strong>Used to publish the uploaded video.</strong><br />
+            After uploading, the app calls the publish endpoint to make the video live on the user's TikTok profile, with title and tags defined by the user.
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <section class="privacy" id="privacy">
+        <h2>Privacy Policy</h2>
+        <p class="updated">Last updated: April 2026</p>
+
+        <h3>1. Overview</h3>
+        <p>Fumazza Flow ("the App") is a local desktop application. It does not operate any cloud servers or databases on behalf of users. All processing occurs on the user's own machine.</p>
+
+        <h3>2. Data We Collect</h3>
+        <p>The App does not collect, transmit, or store any personal data on external servers. The following data is stored locally on the user's device only:</p>
+        <ul>
+          <li>TikTok OAuth access tokens and refresh tokens (stored in local files)</li>
+          <li>Channel and video metadata entered by the user</li>
+          <li>Publish job history (stored in a local MongoDB instance)</li>
+        </ul>
+
+        <h3>3. TikTok Data Usage</h3>
+        <p>When a user authenticates with TikTok, the App receives and locally stores:</p>
+        <ul>
+          <li><strong>open_id</strong> — used to identify the TikTok account</li>
+          <li><strong>display_name</strong> — shown in the channel configuration UI</li>
+          <li><strong>access_token / refresh_token</strong> — used to authenticate API calls for uploading and publishing videos</li>
+        </ul>
+        <p>This data is never sent to any third party or external server controlled by Fumazza Flow.</p>
+
+        <h3>4. How We Use TikTok API</h3>
+        <p>The App uses the TikTok Content Posting API exclusively to upload and publish videos that the user explicitly selects. No content is posted without the user's direct action (manual publish or pre-configured schedule set by the user).</p>
+
+        <h3>5. Data Retention</h3>
+        <p>All data is stored on the user's local machine. Users can delete their credentials and data at any time by removing the local credential files or uninstalling the App.</p>
+
+        <h3>6. Third-Party Services</h3>
+        <p>The App communicates directly with the following official APIs only:</p>
+        <ul>
+          <li>TikTok API (api.tiktok.com)</li>
+          <li>YouTube Data API v3 (googleapis.com)</li>
+        </ul>
+
+        <h3>7. Contact</h3>
+        <p>For questions about this privacy policy, contact us at: <a href="mailto:fumazzaflow@gmail.com">fumazzaflow@gmail.com</a></p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Fumazza Flow — Local video publishing automation tool</p>
+    </div>
+  </footer>
+
+</body>
+</html>
